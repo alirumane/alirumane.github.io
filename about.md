@@ -3,4 +3,6 @@ layout: page
 title: About
 ---
 
-## About
+## ME
+
+I am Ali Rumane
