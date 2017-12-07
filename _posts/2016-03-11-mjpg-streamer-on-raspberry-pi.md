@@ -37,11 +37,11 @@ Requirements:
 ## B. Connect the Camera Module
 
 
-![Raspberry Pi Camera Port](/images/raspb-camera-connection.png "Raspberry Pi Camera Port"){: .center-image }*Camera connection from both sides*
+![Raspberry Pi Camera Port](/images/raspb-camera-connection.png "Raspberry Pi Camera Port"){: .img-fluid }*Camera connection from both sides*
   - Locate the camera port and connect the camera as shown.
   - Open the `Raspberry Pi Configuration` Tool from `Preferences` on the main menu
 
-![Raspberry Pi Camera Enable](/images/raspi-camera-config.png "Raspberry Pi Camera Enable"){: .center-image }
+![Raspberry Pi Camera Enable](/images/raspi-camera-config.png "Raspberry Pi Camera Enable"){: .img-fluid }
 
   - Enable the `Camera` from `Interfaces` tab if Disabled and Reboot the Pi.
 
