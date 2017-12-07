@@ -8,8 +8,8 @@ layout: default
         <main class="post blog-post col-lg-8">  
           <div class="container">
             <div class="post-single">
-		{% if page.thumbnail %}
-              <div class="post-thumbnail"><img src="img/blog-post-3.jpeg" alt="..." class="img-fluid"></div>
+		{% if post.thumbnail %}
+              <div class="post-thumbnail"><img src="img/blog-post-3.jpeg" alt="{{post.title}}" class="img-fluid"></div>
 		{% endif %}
               <!-- post -->
               <div class="post col-xl-6">
