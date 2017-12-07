@@ -33,3 +33,5 @@ compress_html:
 links:
   - title: Home
     url: "/"
+  - title: About
+    url: /about
