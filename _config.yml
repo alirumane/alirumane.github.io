@@ -1,0 +1,29 @@
+# Site settings
+title: Ali Rumane
+description: I use light weight heavy impact tools for my work
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# User settings
+username: Ali Rumane
+user_description: I use light weight heavy impact tools for my work
+user_title: Embedded Systems Engineer
+email: 
+twitter_username: 
+github_username: alirumane
+gplus_username:  
+disqus_username: 
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  startings: [html, head, body]
+  endings: all
+  blanklines: false
+  profile: false
