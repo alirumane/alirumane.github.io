@@ -34,4 +34,4 @@ links:
   - title: Home
     url: "{{site.baseurl}}"
   - title: About
-    url: /about
+    url: "{{site.baseurl}}/about"
