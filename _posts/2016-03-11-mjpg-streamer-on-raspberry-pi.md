@@ -7,11 +7,25 @@ category: Raspberry Pi Tutorials
 thumbnail: /thumbs/mjpg-streamer-on-raspberry-pi.png
 description: Streaming video output on webserver or media player through camera connected on Raspberry Pi can be used for many applications. You can stream video from Raspberry Pi Camera to Web Browsers, on Android, IOS and Windows!
 ---
-
-<p><span class="image left"><img src="{{ page.thumbnail }}" alt="" /></span> <i class="fa fa-quote-left fa-2x fa-pull-left fa-border"></i></p>
-
+<div class="row">
+<div class="intro">
+<div class="paragraphs">
+  <div class="row">
+    <div class="span4">
+      <div class="clearfix">
+			<img class="pull-left" src="{{ page.thumbnail }}" alt="{{page.title}}">
+			<i class="fa fa-quote-left fa-2x fa-pull-left fa-border"></i>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 Motion JPG is a video compression format in which each video frame or video sequence is compressed separately as a JPEG image. MJPG-streamer takes JPGs from compatible cameras or other input plugins and streams them as M-JPEG via HTTP to web browsers and other media players.
+
+* Do not remove this line (it will not be displayed)
+{:toc}
 
 ## A. Essentials
 
@@ -24,12 +38,11 @@ Requirements:
 ## B. Connect the Camera Module
 
 
-![Raspberry Pi Camera Port]( {{site.url}}/images/raspb-camera-connection.png "Raspberry Pi Camera Port" )*Camera connection from both sides*
+![Raspberry Pi Camera Port](/images/raspb-camera-connection.png "Raspberry Pi Camera Port"){: .center-image }*Camera connection from both sides*
   - Locate the camera port and connect the camera as shown.
   - Open the `Raspberry Pi Configuration` Tool from `Preferences` on the main menu
 
-![Raspberry Pi Camera Enable]( {{site.url}}/images/raspi-camera-config.png "Raspberry Pi Camera Enable" )
-
+![Raspberry Pi Camera Enable](/images/raspi-camera-config.png "Raspberry Pi Camera Enable"){: .center-image }
 
   - Enable the `Camera` from `Interfaces` tab if Disabled and Reboot the Pi.
 
@@ -90,9 +103,6 @@ sudo rm -rf ~/mjpg-streamer
 
 You can change the above parameters
 
-
-{: .table .table-striped}
-
 | Parameter 	|      Point      	|                Details               	|
 |:---------:	|:---------------:	|:------------------------------------:	|
 |     -i    	|      input      	|           input parameters           	|
@@ -104,7 +114,6 @@ You can change the above parameters
 |     -p    	|    HTTP port    	|     TCP port for this HTTP server    	|
 |     -w    	| web page folder 	|     folder that contains webpages    	|
   
-
 You will see something like this
 
 {% highlight bash %}
