@@ -8,14 +8,14 @@ layout: default
         <main class="post blog-post col-lg-8">  
           <div class="container">
             <div class="post-single">
-		{% if post.thumbnail %}
+		{% if page.thumbnail %}
               <div class="post-thumbnail"><img src="{{ post.thumbnail }}" alt="{{post.title}}" class="img-fluid"></div>
 		{% endif %}
               <div class="post-details">
                 <div class="post-meta d-flex justify-content-between">
                   <div class="category"><a href="#">Business</a><a href="#">Financial</a></div>
                 </div>
-                <h1>{{ post.title }}<a href="#"><i class="fa fa-bookmark-o"></i></a></h1>
+                <h1>{{ page.title }}<a href="#"><i class="fa fa-bookmark-o"></i></a></h1>
                 <div class="post-footer d-flex align-items-center flex-column flex-sm-row"><a href="#" class="author d-flex align-items-center flex-wrap">
                     <div class="title"><span>{{site.username}}</span></div></a>
                   <div class="d-flex align-items-center flex-wrap">       
