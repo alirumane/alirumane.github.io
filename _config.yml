@@ -32,6 +32,6 @@ compress_html:
 # For external links add external: true
 links:
   - title: Home
-    url: "index.html"
+    url: "{{site.baseurl}}"
   - title: About
     url: /about
