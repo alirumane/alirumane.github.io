@@ -1,7 +1,6 @@
 ---
 layout: post
-title:
-twitter_text: Installing MJPG Streamer on Raspberry Pi
+title: Installing MJPG Streamer on Raspberry Pi
 tags: [Raspberry Pi, MJPG Streamer, Video]
 category: Raspberry Pi Tutorials
 thumbnail: /thumbs/mjpg-streamer-on-raspberry-pi.png
@@ -94,7 +93,7 @@ sudo rm -rf ~/mjpg-streamer
 ## E. Start Streaming
 
 
-  To Begin streaming type:
+To Begin streaming type:
 
 
 {% highlight bash %}
