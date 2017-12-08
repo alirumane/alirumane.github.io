@@ -7,7 +7,7 @@ thumbnail : /thumbs/install-lighttpd-on-raspberry-pi.png
 description: Lighttpd is a webserver optimized for speed and reduced CPU-load. It provides setting up a web server without loading the limited processing capability which is ideal for providing web access to the Raspberry Pi as a monitoring tool, or as a lightweight webserver for a personal use.
 ---
 
-<p><span class="image left"><img src="{{ page.thumbnail }}" alt="" /></span> <i class="fa fa-quote-left fa-2x fa-pull-left fa-border"></i></p>
+<p><i class="fa fa-quote-left fa-2x fa-pull-left fa-border"></i></p>
 
 [Lighttpd](http://www.lighttpd.net/) is an open-source web server optimized for speed-critical, high-performance environments while maintaining standards-compliant, secure and flexible.
 
