@@ -1,13 +1,11 @@
           <!-- Widget [Tags Cloud Widget]-->
-          <div class="widget tags">       
+          <div class="widget tags"> 
             <header>
               <h3 class="h6">Tags</h3>
             </header>
+                    {% for tag in post.tags %}
             <ul class="list-inline">
-              <li class="list-inline-item"><a href="#" class="tag">#Business</a></li>
-              <li class="list-inline-item"><a href="#" class="tag">#Technology</a></li>
-              <li class="list-inline-item"><a href="#" class="tag">#Fashion</a></li>
-              <li class="list-inline-item"><a href="#" class="tag">#Sports</a></li>
-              <li class="list-inline-item"><a href="#" class="tag">#Economy</a></li>
+              <li class="list-inline-item"><a href="{{ site.baseurl }}/tags/#{{tag | slugify }}" class="tag">#{{ tag }}</a></li>
             </ul>
+                    {% endfor %}
           </div>
