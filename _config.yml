@@ -35,3 +35,6 @@ links:
     url: "/"
   - title: About
     url: "/about"
+  - title: Blog
+    url: "/blog"
+    
