@@ -11,10 +11,12 @@ description: "Take a look at my beautiful category."
   {% if category_list.first[0] == null %}
     {% for category in category_list %}
         <a data-scroll href="#{{ category | slugify }}">{{ category }}</a>
+  <br>
     {% endfor %}
   {% else %}
     {% for category in category_list %}
         <a data-scroll href="#{{ category[0] | slugify }}">{{ category[0] }}</a>
+    <br>
     {% endfor %}
   {% endif %}
 {% assign category_list = nil %}
