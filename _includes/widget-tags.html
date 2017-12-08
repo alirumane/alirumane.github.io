@@ -3,9 +3,19 @@
             <header>
               <h3 class="h6">Tags</h3>
             </header>
-                    {% for tag in page.tags %}
+                    {% assign tags_list = site.tags %}
+                    {% if tags_list.first[0] == null %}
+                    {% for tag in tags_list %}
             <ul class="list-inline">
               <li class="list-inline-item"><a href="{{ site.baseurl }}/tags#{{tag | slugify }}" class="tag">#{{ tag }}</a></li>
             </ul>
                     {% endfor %}
+                    {% else %}
+                    {% for tag in tags_list %}
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="{{ site.baseurl }}/tags#{{tag[0] | slugify }}" class="tag">#{{ tag[0] }}</a></li>
+            </ul>
+                    {% endfor %}
+                    {% endif %}
+                    {% assign tags_list = nil %}      
           </div>
