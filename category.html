@@ -5,7 +5,9 @@ description: "Take a look at my beautiful category."
 ---
 
 <div class="category">
-{% assign category_list = site.category %}
+{% for post in site.posts %}
+  {% for category in post.category %}
+{% assign category_list = post.category %}
   {% if category_list.first[0] == null %}
     {% for category in category_list %}
         <a data-scroll href="#{{ category | slugify }}">{{ category }}</a>
@@ -16,6 +18,8 @@ description: "Take a look at my beautiful category."
     {% endfor %}
   {% endif %}
 {% assign category_list = nil %}
+  {% endfor %}
+{% endfor %}
 </div>
 
 {% for category in site.category %}
