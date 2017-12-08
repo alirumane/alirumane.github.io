@@ -14,8 +14,8 @@ layout: default
               <div class="post-details">
                 <div class="post-meta d-flex justify-content-between">
                   <div class="category">
-		{% for categories in page.categories %}
-			<a href="{{ site.baseurl }}/categories#{{categories | slugify }}">{{ categories }}</a>
+		{% for category in page.category %}
+			<a href="{{ site.baseurl }}/category#{{category | slugify }}">{{ category }}</a>
 		{% endfor %}
 			</div>
                 </div>
