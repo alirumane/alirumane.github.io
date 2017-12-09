@@ -4,7 +4,7 @@ title: Installing MJPG Streamer on Raspberry Pi
 tags: [Raspberry Pi, MJPG Streamer, Video]
 category: [Raspberry Pi Tutorials]
 thumbnail: /thumbs/mjpg-streamer-on-raspberry-pi.png
-description: Streaming video output on webserver or media player through camera connected on Raspberry Pi can be used for many applications. You can stream video from Raspberry Pi Camera to Web Browsers, on Android, IOS and Windows!
+description: Streaming video output on the web server or media player through a camera connected on Raspberry Pi can be used for many applications. You can stream video from Raspberry Pi Camera to Web Browsers, on Android, IOS, and Windows!
 ---
 <div class="row">
 <div class="intro">
