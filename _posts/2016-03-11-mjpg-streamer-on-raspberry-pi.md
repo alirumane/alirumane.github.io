@@ -151,11 +151,11 @@ Starting Camera
 
 Encoder Buffer Size 81920
 {% endhighlight %}
-  Now type the this url in your browser `http://localhost:9000/stream.html` to view the streamed output locally or type the IP address of Raspberry Pi with port like `http://<IP-address>:9000/stream.html` to watch from another computer/device in your network.
+  Now type this url in your browser `http://localhost:9000/stream.html` to view the streamed output locally or type the IP address of Raspberry Pi with the port like `http://<IP-address>:9000/stream.html` to watch from another computer/device in your network.
 
 #### Find IP address:
 
-To find IP address there are many ways, one of them is by by typing `ifconfig` in terminal
+To find IP address there are many ways, one of them is by typing `ifconfig` in terminal
 
 {% highlight bash %}
 sudo ifconfig
@@ -193,8 +193,8 @@ wlan0     Link encap:Ethernet  HWaddr 58:a2:c2:93:27:36
           RX bytes:115886055 (110.5 MiB)  TX bytes:83286188 (79.4 MiB)
 {% endhighlight %}
 
-In this case `192.168.1.49` is the IP-address
-You should enter address like `http://192.168.1.49:9000/stream.html` in your browser to view streaming.
+In this case, `192.168.1.49` is the IP-address
+You should enter the address like `http://192.168.1.49:9000/stream.html` in your browser to view streaming.
 
 ## F. Stop Streaming
 
