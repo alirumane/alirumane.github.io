@@ -7,7 +7,9 @@ title: "Blog"
               <!-- post -->
                         {% for post in site.posts %}
               <div class="post col-xl-6">
+                          {% if page.thumbnail %}
                 <div class="post-thumbnail"><a href="post.html"><img src="img/blog-post-1.jpeg" alt="..." class="img-fluid"></a></div>
+                          {% endif %}
                 <div class="post-details">
                   <div class="post-meta d-flex justify-content-between">
                     <div class="date meta-last">{{post.date | date: "%d"}} {{ post.date | date: "%B %Y" }}</div>
