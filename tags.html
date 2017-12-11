@@ -8,11 +8,11 @@ description: "Take a look at my beautiful tags."
 {% assign tags_list = site.tags %}
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %}
-        <a class="tag" href="#{{ tag | slugify }}">{{ tag }}</a>
+        <a data-scroll href="#{{ tag | slugify }}">{{ tag }}</a>
     {% endfor %}
   {% else %}
     {% for tag in tags_list %}
-        <a class="tag" href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+        <a data-scroll href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
     {% endfor %}
   {% endif %}
 {% assign tags_list = nil %}
