@@ -7,11 +7,12 @@ title: "Blog"
 
             <div class="row">
               <!-- post -->
+                        {% for post in site.posts %}
               <div class="post col-xl-6">
                 <div class="post-thumbnail"><a href="post.html"><img src="img/blog-post-1.jpeg" alt="..." class="img-fluid"></a></div>
                 <div class="post-details">
                   <div class="post-meta d-flex justify-content-between">
-                    <div class="date meta-last">20 May | 2016</div>
+                    <div class="date meta-last">{{post.date}}</div>
                     <div class="category"><a href="#">Business</a></div>
                   </div><a href="post.html">
                     <h3 class="h4">Alberto Savoia Can Teach You About Interior</h3></a>
@@ -25,5 +26,6 @@ title: "Blog"
                 </div>
               
               </div>
-              
+                  {% endfor %}
+
             </div>
