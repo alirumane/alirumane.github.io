@@ -21,6 +21,7 @@ description: "Search Page."
         "author": "{{ post.author | xml_escape }}",
         "tags": "{{ post.tags | xml_escape }}",
         "category": "{{ post.category | xml_escape }}",
+        "description": "{{ post.description | xml_escape }}",
         "content": {{ post.content | strip_html | strip_newlines | jsonify }},
         "url": "{{ post.url | xml_escape }}"
       }
