@@ -13,6 +13,10 @@ description: "Search Page."
 
 <ul id="search-results"></ul>
 
+
+<input placeholder="Search&hellip;" type="search" id="search" class="search-input">
+<div id="results" class="all-posts results"></div>
+
 <script>
   window.store = {
     {% for post in site.posts %}
