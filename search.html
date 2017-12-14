@@ -4,7 +4,7 @@ title: "Search"
 description: "Search Page."
 ---
 
-
+<!--
 <form action="{{ site.baseurl }}/search.html" method="get">
   <label for="search-box">Search</label>
   <input type="text" id="search-box" name="query">
@@ -12,11 +12,12 @@ description: "Search Page."
 </form>
 
 <ul id="search-results"></ul>
-
+-->
 
 <input placeholder="Search&hellip;" type="search" id="search" class="search-input">
 <div id="results" class="all-posts results"></div>
 
+<!--
 <script>
   window.store = {
     {% for post in site.posts %}
@@ -33,8 +34,9 @@ description: "Search Page."
     {% endfor %}
   };
 </script>
+-->
 
 <script src="{{ site.baseurl }}/assets/vendor/lunr/lunr.min.js"></script>
-<script src="{{ site.baseurl }}/assets/vendor/lunr/search.js"></script>
+<!--<script src="{{ site.baseurl }}/assets/vendor/lunr/search.js"></script>-->
 <script src="{{ site.baseurl }}/assets/vendor/lunr/lunr-feed.js"></script>
 
