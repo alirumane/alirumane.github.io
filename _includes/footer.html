@@ -21,3 +21,9 @@
     <script src="{{ site.baseurl}}/assets/vendor/jquery.cookie/jquery.cookie.js"> </script>
     <script src="{{ site.baseurl}}/assets/vendor/fancyapps/fancybox/jquery.fancybox.min.js"></script>
     <script src="{{ site.baseurl}}/assets/js/front.js"></script>
+
+{% if page.title == "Search" %}
+    <script src="{{ site.baseurl }}/assets/vendor/lunr/lunr.min.js"></script>
+    <!--<script src="{{ site.baseurl }}/assets/vendor/lunr/search.js"></script>-->
+    <script src="{{ site.baseurl }}/assets/vendor/lunr/lunr-feed.js"></script>
+{% endif %}
