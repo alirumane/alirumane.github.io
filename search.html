@@ -14,9 +14,10 @@ description: "Search Page."
 <ul id="search-results"></ul>
 -->
 
+<!--
 <input placeholder="Search&hellip;" type="search" id="search" class="search-input">
 <div id="results" class="all-posts results"></div>
-
+-->
 <!--
 <script>
   window.store = {
@@ -41,3 +42,21 @@ description: "Search Page."
 <script src="{{ site.baseurl }}/assets/vendor/lunr/search.js"></script>
 <script src="{{ site.baseurl }}/assets/vendor/lunr/lunr-feed.js"></script>
 -->
+
+
+<h1 class="page-title"><i class="fa fa-search" style="font-size:1em;"></i>&nbsp;Search</h1>
+
+
+Powered by <a href="/blog/2016/01/04/how-to-make-lunrjs-jekyll-work-together/">lunr.js</a>. 
+
+
+<br/>&nbsp;
+<form action="get" id="site_search">
+<center>
+  <input style="font-size:20px;" type="text" id="search_box">
+  <input style="font-size:20px;" type="submit" value="Go!">
+</center>
+</form>
+<br/>&nbsp;
+<br/>&nbsp;
+<ul id="search_results"></ul>
