@@ -7,20 +7,8 @@ thumbnail: images/post/mjpg-streamer-on-raspberry-pi.jpg
 description: Streaming video output on the web server or media player through a camera connected on Raspberry Pi can be used for many applications. You can stream video from Raspberry Pi Camera to Web Browsers, on Android, IOS, and Windows!
 ---
 
-<div class="row">
-<div class="intro">
-<div class="paragraphs">
-  <div class="row">
-    <div class="span4">
-      <div class="clearfix">
-			<img class="pull-left" src="{{site.baseurl}}{{ page.thumbnail }}" alt="{{page.title}}">
-			<i class="fa fa-quote-left fa-2x fa-pull-left fa-border"></i>
-      </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+
+	<i class="fa fa-quote-left fa-2x fa-pull-left fa-border"></i>
 
 Motion JPG is a video compression format in which each video frame or video sequence is compressed separately as a JPEG image. MJPG-streamer takes JPGs from compatible cameras or other input plugins and streams them as M-JPEG via HTTP to web browsers and other media players.
 
