@@ -7,7 +7,7 @@ title: "Blog"
               <!-- post -->
                         {% for post in site.posts %}
               <div class="post col-xl-6">
-                          {% if page.thumbnail %}
+                          {% if post.thumbnail %}
                 <div class="post-thumbnail"><a href="post.html"><img src="{{site.baseurl}}/{{post.thumbnail}}" alt="{{post.title}}" class="img-fluid"></a></div>
                           {% endif %}
                 <div class="post-details">
