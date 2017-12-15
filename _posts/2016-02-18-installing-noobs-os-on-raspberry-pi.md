@@ -14,7 +14,7 @@ description: You bought a Raspberry Pi and want to run an OS on it
 
 **N**ew **O**ut **O**f the **B**ox **S**oftware - an easy Operating System installer
 
-[Raspberrypi.org](https://www.raspberrypi.org/) suggests NOOBS OS installation. It has complete guide for installing the OS, still cut through...
+[Raspberrypi.org](https://www.raspberrypi.org/) suggests NOOBS OS installation. It has a complete guide for installing the OS, still cut through...
 
 
 ## A. Get NOOBS
@@ -23,8 +23,8 @@ description: You bought a Raspberry Pi and want to run an OS on it
 There are two common methods to get NOOBS
 
 * Buy a pre-installed SD card
-  *  SD cards with NOOBS preinstalled are available, list can be found on Raspberrypi website.
-  * If you bought pre-installed SD card, driectly follow Booting step in Installation.
+  *  SD cards with NOOBS preinstalled are available, a list can be found on Raspberrypi website.
+  * If you bought pre-installed SD card, directly follow Booting step in Installation.
 * Download NOOBS from Raspberrypi website
   * NOOBS is available for download on Raspberrypi website.
 
@@ -47,7 +47,7 @@ There are two common methods to get NOOBS
 **Download**
 
 
-* You will need a computer with an SD card reader. If you don't have one, you can buy an USB SD Card reader.
+* You will need a computer with an SD card reader. If you don't have one, you can buy a USB SD Card reader.
 
 * Download NOOBS installer from [https://www.raspberrypi.org/downloads/noobs/](https://www.raspberrypi.org/downloads/noobs/).
 
@@ -77,14 +77,14 @@ It is preferred to download NOOBS over NOOBS Lite.
 **NOOBS files on SD Card**
 
 
-* Extract the downloaded NOOBS zip file in SD card and make sure the extracted file is not present in folder.
+* Extract the downloaded NOOBS zip file in SD card and make sure the extracted file is not present in the folder.
 
-* The files will be transfered in your SD card.
+* The files will be transferred to your SD card.
 
 * Safely eject the SD card and insert it into Raspberry Pi.
 
 
-**Booting first time**
+**Booting the first time**
 
  ![Raspbian installation selection]({{site.url}}/images/noobs_raspbian_recom.png "Raspbian installation selection"){: .center-image }*Raspbian installation selection*
 
@@ -100,7 +100,7 @@ It is preferred to download NOOBS over NOOBS Lite.
 * Once the install process has completed, it may ask for date and time. Set them as per your region.
 
 
-** Logging in**
+**Logging in**
 
 
 * The default login for Raspbian is username **pi** and password **raspberry**.
@@ -128,6 +128,6 @@ and
 sudo apt-get upgrade
 ```
 
-to run latest build.
+to run the latest build.
 
 You have successfully installed NOOBS in your Raspberry Pi!
