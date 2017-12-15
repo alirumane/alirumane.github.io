@@ -8,7 +8,7 @@ description: Streaming video output on the web server or media player through a 
 ---
 
 
-	<i class="fa fa-quote-left fa-2x fa-pull-left fa-border"></i>
+<i class="fa fa-quote-left fa-2x fa-pull-left fa-border"></i>
 
 Motion JPG is a video compression format in which each video frame or video sequence is compressed separately as a JPEG image. MJPG-streamer takes JPGs from compatible cameras or other input plugins and streams them as M-JPEG via HTTP to web browsers and other media players.
 
