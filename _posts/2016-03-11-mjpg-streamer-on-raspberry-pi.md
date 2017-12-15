@@ -12,7 +12,7 @@ description: Streaming video output on the web server or media player through a 
   <div class="row">
     <div class="span4">
       <div class="clearfix">
-			<img class="pull-left" src="{{ page.thumbnail }}" alt="{{page.title}}">
+			<img class="pull-left" src="{{site.baseurl}}{{ page.thumbnail }}" alt="{{page.title}}">
 			<i class="fa fa-quote-left fa-2x fa-pull-left fa-border"></i>
       </div>
       </div>
