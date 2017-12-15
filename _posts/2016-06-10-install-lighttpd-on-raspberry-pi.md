@@ -3,7 +3,7 @@ layout: post
 title: Install LIGHTTPD web server on Raspberry Pi
 tags: [Raspberry Pi, lighttpd, server]
 category: [Raspberry Pi Tutorials]
-thumbnail : /thumbs/install-lighttpd-on-raspberry-pi.jpg
+thumbnail : images/post/install-lighttpd-on-raspberry-pi.jpg
 description: Lighttpd is a web server optimized for speed and reduced CPU-load. It provides setting up a web server without loading the limited processing capability which is ideal for providing web access to the Raspberry Pi as a monitoring tool, or as a lightweight web server for a personal use.
 ---
 
