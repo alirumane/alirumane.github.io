@@ -2,7 +2,7 @@
 title: Ali Rumane
 subtitle: I use light weight heavy impact tools for my work
 description: Ali Rumane | v 1.0
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://alirumane.github.io" # the base hostname & protocol for your site
 
 # User settings
