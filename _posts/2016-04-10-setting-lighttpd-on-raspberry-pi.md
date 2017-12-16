@@ -48,16 +48,16 @@ This will install the web server and other required dependencies.
 
 CGI and FastCGI are not necessary though.
 
-{% highlight bash %}
+```bash
 sudo lighttpd-enable-mod cgi
-{% endhighlight %}
+```
 
 
 #### 3. Enabling FastCGI
 
-{% highlight bash %}
+```bash
 sudo lighttpd-enable-mod fastcgi
-{% endhighlight %}
+```
 
 
 ## C. Configuring Server
@@ -66,9 +66,9 @@ sudo lighttpd-enable-mod fastcgi
 You need to change the default location of HTML in web-directory.  Type the following command in terminal
 
 
-{% highlight bash %}
+```bash
  sudo nano /etc/lighttpd/lighttpd.conf
-{% endhighlight %}
+```
 
 you will see
 
@@ -105,9 +105,9 @@ You can restart the server with any two commands below
 * Direct Reload
 
 
-{% highlight bash %}
+```bash
  sudo service lighttpd force-reload
-{% endhighlight %}
+```
 
 
 OR
@@ -116,11 +116,11 @@ OR
 * Stop-Start Reload
 
 
-{% highlight bash %}
+```bash
 sudo /etc/init.d/lighttpd stop
 
 sudo /etc/init.d/lighttpd start
-{% endhighlight %}
+```
 
 
 ## E. Set permissions on the web directory
@@ -132,21 +132,21 @@ Change the permissions on the `www` directory to allow a user to update the web 
 
 Change the directory owner and group
 
-{% highlight bash %}
+```bash
  sudo chown www-data:www-data /var/www
-{% endhighlight %}
+```
 
 To allow the group to write to the directory type the following in terminal
 
-{% highlight bash %}
+```bash
  sudo chmod 775 /var/www
-{% endhighlight %}
+```
 
  To add the pi user to the www-data group
 
-{% highlight bash %}
+```bash
  sudo usermod -a -G www-data pi
-{% endhighlight %}
+```
 
  > It is necessary to logout current user and login again to make the group permissions.
  It is better to `restart` the Raspberry Pi to set the permissions.
