@@ -22,11 +22,11 @@ description: You bought a Raspberry Pi and want to run an OS on it
 
 There are two common methods to get NOOBS
 
-  - Buy a pre-installed SD card
-  -   - SD cards with NOOBS preinstalled are available, a list can be found on Raspberrypi website.
-  -   - If you bought pre-installed SD card, directly follow Booting step in Installation.
-  - Download NOOBS from Raspberrypi website
-  -   - NOOBS is available for download on Raspberrypi website.
+- Buy a pre-installed SD card
+  - SD cards with NOOBS preinstalled are available, a list can be found on Raspberrypi website.
+  - If you bought pre-installed SD card, directly follow Booting step in Installation.
+- Download NOOBS from Raspberrypi website
+  - NOOBS is available for download on Raspberrypi website.
 
 
 ## B. Setting up
