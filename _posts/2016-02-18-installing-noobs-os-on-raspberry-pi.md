@@ -32,6 +32,7 @@ There are two common methods to get NOOBS
 
 ## B. Setting up
 
+
 **Essentials:**
 
 * Raspberry Pi
