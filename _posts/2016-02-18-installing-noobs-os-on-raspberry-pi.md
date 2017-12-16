@@ -52,8 +52,8 @@ There are two common methods to get NOOBS
 * Download NOOBS installer from [https://www.raspberrypi.org/downloads/noobs/](https://www.raspberrypi.org/downloads/noobs/).
 
 * You will have two options NOOBS and NOOBS Lite
- * NOOBS - Offline and network install
- * NOOBS Lite - Network install only
+  * NOOBS - Offline and network install
+  * NOOBS Lite - Network install only
 
 It is preferred to download NOOBS over NOOBS Lite.
 
