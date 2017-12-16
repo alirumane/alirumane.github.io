@@ -66,17 +66,17 @@ git clone https://github.com/jacksonliam/mjpg-streamer.git ~/mjpg-streamer
 
   Compile:
 
-{% highlight bash %}
+```sh
  make clean all
-{% endhighlight %}
+```
 
   Replace old jpg-streamer:
 
-{% highlight bash %}
+```bash
 sudo rm -rf /opt/mjpg-streamer
 sudo mv ~/mjpg-streamer/mjpg-streamer-experimental /opt/mjpg-streamer
 sudo rm -rf ~/mjpg-streamer
-{% endhighlight %}
+```
 
 
 ## E. Start Streaming
@@ -85,9 +85,9 @@ sudo rm -rf ~/mjpg-streamer
 To Begin streaming type:
 
 
-{% highlight bash %}
+```sh
  LD_LIBRARY_PATH=/opt/mjpg-streamer/ /opt/mjpg-streamer/mjpg_streamer -i "input_raspicam.so -fps 15 -q 50 -x 640 -y 480" -o "output_http.so -p 9000 -w /opt/mjpg-streamer/www"
-{% endhighlight %}
+```
 
 You can change the above parameters
 
@@ -107,7 +107,7 @@ You can change the above parameters
   
 You will see something like this
 
-{% highlight bash %}
+```sh
 MJPG Streamer Version.: 2.0
 
 i: fps.............: 15
@@ -139,20 +139,21 @@ commands..........: enabled
 Starting Camera
 
 Encoder Buffer Size 81920
-{% endhighlight %}
+```
+
   Now type this url in your browser `http://localhost:9000/stream.html` to view the streamed output locally or type the IP address of Raspberry Pi with the port like `http://<IP-address>:9000/stream.html` to watch from another computer/device in your network.
 
 #### Find IP address:
 
 To find IP address there are many ways, one of them is by typing `ifconfig` in terminal
 
-{% highlight bash %}
+```bash
 sudo ifconfig
-{% endhighlight %}
+```
 
   It will be something like this
   
-{% highlight bash %}
+```sh
 eth0      Link encap:Ethernet  HWaddr 09:00:12:90:e3:e5  
           inet addr:192.168.1.29 Bcast:192.168.1.255  Mask:255.255.255.0
           inet6 addr: fe80::a00:27ff:fe70:e3f5/64 Scope:Link
@@ -180,7 +181,7 @@ wlan0     Link encap:Ethernet  HWaddr 58:a2:c2:93:27:36
           TX packets:364103 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:1000 
           RX bytes:115886055 (110.5 MiB)  TX bytes:83286188 (79.4 MiB)
-{% endhighlight %}
+```
 
 In this case, `192.168.1.49` is the IP-address
 You should enter the address like `http://192.168.1.49:9000/stream.html` in your browser to view streaming.
@@ -189,6 +190,6 @@ You should enter the address like `http://192.168.1.49:9000/stream.html` in your
 
   To stop streaming type:
   
-{% highlight bash %}
+```bash
 kill -9 'pidof mjpg_streamer'
-{% endhighlight %}
+```
