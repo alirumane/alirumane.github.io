@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About"
+title: "Contact"
 ---
 
 Please feel free to reach out to me if you have any questions or suggestions. Also you can just send me a friendly Hello!
