@@ -52,8 +52,7 @@ There are two common methods to get NOOBS
 
 * You will have two options NOOBS and NOOBS Lite
 
-  NOOBS - Offline and network install
-  
+  NOOBS - Offline and network install    
   NOOBS Lite - Network install only
 
 It is preferred to download NOOBS over NOOBS Lite.
