@@ -39,30 +39,30 @@ Requirements:
 
   Install dev version of libjpeg:
 
-{% highlight bash %}
+```bash
 sudo apt-get install libjpeg62-turbo-dev
-{% endhighlight %}
+```
 
   Install make:
 
-{% highlight bash %}
+```bash
 sudo apt-get install cmake
-{% endhighlight %}
+```
 
 ## D. Installing MJPG Streamer
 
   Download mjpg-streamer with raspicam plugin:
 
-{% highlight bash %}
+```sh
 git clone https://github.com/jacksonliam/mjpg-streamer.git ~/mjpg-streamer
-{% endhighlight %}
+```
 
   Change directory:
 
 
-{% highlight bash %}
+```sh
  cd ~/mjpg-streamer/mjpg-streamer-experimental
-{% endhighlight %}
+```
 
   Compile:
 
