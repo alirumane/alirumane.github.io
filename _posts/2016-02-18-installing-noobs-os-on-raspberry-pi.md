@@ -26,7 +26,6 @@ There are two common methods to get NOOBS
 - Download NOOBS from Raspberrypi website
   - NOOBS is available for download on Raspberrypi website.
 
-
 ## B. Setting up
 
 **Essentials:**
@@ -41,9 +40,7 @@ There are two common methods to get NOOBS
 
 **Instructions:**
 
-
 **Download**
-
 
 * You will need a computer with an SD card reader. If you don't have one, you can buy a USB SD Card reader.
 
@@ -55,9 +52,7 @@ There are two common methods to get NOOBS
 
 It is preferred to download NOOBS over NOOBS Lite.
 
-
 **Format SD Card**
-
 
 ![SD Formatter selection]({{site.url}}/images/SD_Formatter_4_instr.png "SD Formatter selection"){: .center-image }*SD Formatter selection*
 
@@ -71,9 +66,7 @@ It is preferred to download NOOBS over NOOBS Lite.
 
 * Click on Format button to format your SD card.
 
-
 **NOOBS files on SD Card**
-
 
 * Extract the downloaded NOOBS zip file in SD card and make sure the extracted file is not present in the folder.
 
@@ -81,11 +74,9 @@ It is preferred to download NOOBS over NOOBS Lite.
 
 * Safely eject the SD card and insert it into Raspberry Pi.
 
-
 **Booting the first time**
 
  ![Raspbian installation selection]({{site.url}}/images/noobs_raspbian_recom.png "Raspbian installation selection"){: .center-image }*Raspbian installation selection*
-
 
 * Insert the SD card in Raspberry Pi, connect the Mouse, Keyboard and HDMI cable.
 
@@ -97,22 +88,17 @@ It is preferred to download NOOBS over NOOBS Lite.
 
 * Once the install process has completed, it may ask for date and time. Set them as per your region.
 
-
 **Logging in**
-
 
 * The default login for Raspbian is username **pi** and password **raspberry**.
 
 * Though won't ask by default, you can change it later.
 
-
 ## D. Update
-
 
 You can update Raspberry Pi by typing the following commands on terminal.
 
 It assures you run the latest builds and fixes for smooth operation.
-
 
 Type
 
