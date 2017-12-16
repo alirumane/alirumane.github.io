@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installing MJPG Streamer on Raspberry Pi
+title: Raspberry Pi Camera over Internet with MJPG Streamer
 tags: [Raspberry Pi, MJPG Streamer, Video]
 category: [Raspberry Pi Tutorials]
 thumbnail: images/post/mjpg-streamer-on-raspberry-pi.jpg
