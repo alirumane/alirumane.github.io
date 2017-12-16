@@ -16,9 +16,7 @@ description: You bought a Raspberry Pi and want to run an OS on it
 
 [Raspberrypi.org](https://www.raspberrypi.org/) suggests NOOBS OS installation. It has a complete guide for installing the OS, still cut through...
 
-
 ## A. Get NOOBS
-
 
 There are two common methods to get NOOBS
 
