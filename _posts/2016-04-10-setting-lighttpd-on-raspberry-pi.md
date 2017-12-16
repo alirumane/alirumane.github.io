@@ -91,10 +91,9 @@ server.document-root        = "/var/www/html"
 to
 
 
-{% highlight bash %}
+```apacheconf
  server.document-root        = "/var/www/"
-{% endhighlight %}
-
+```
 
 ## D. Restarting Server
 
