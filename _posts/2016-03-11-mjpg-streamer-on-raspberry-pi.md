@@ -183,8 +183,8 @@ wlan0     Link encap:Ethernet  HWaddr 58:a2:c2:93:27:36
           RX bytes:115886055 (110.5 MiB)  TX bytes:83286188 (79.4 MiB)
 ```
 
-In this case, `192.168.1.49` is the IP-address
-You should enter the address like `http://192.168.1.49:9000/stream.html` in your browser to view streaming.
+In this case, `192.168.1.29` is the IP-address
+You should enter the address like `http://192.168.1.29:9000/stream.html` in your browser to view streaming.
 
 ## F. Stop Streaming
 
