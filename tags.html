@@ -58,8 +58,8 @@ description: "Take a look at my beautiful tags."
   <hr/>
   <div class="tags-expo-section">
     {% for tag in site.tags %}
-    <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
-    <ul class="tags-expo-posts">
+    <span class="tag-title" id="{{ tag[0] | slugify }}">{{ tag[0] }}</span>
+    <ul class="tags-expo">
       {% for post in tag[1] %}
         <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
       <li>
