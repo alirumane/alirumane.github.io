@@ -4,6 +4,7 @@ title: "Tags"
 description: "Take a look at my beautiful tags."
 ---
 
+<!--
 <div class="post-tags">
 {% assign tags_list = site.tags %}
   {% if tags_list.first[0] == null %}
@@ -39,7 +40,7 @@ description: "Take a look at my beautiful tags."
     </ul>
 {% endfor %}
 
-  
+  -->
   
   
 ## New content  
@@ -59,7 +60,7 @@ description: "Take a look at my beautiful tags."
   <div class="tags-expo-section">
     {% for tag in site.tags %}
     <span class="tag-title" id="{{ tag[0] | slugify }}">{{ tag[0] }}</span>
-    <ul class="tags-expo">
+    <ul class="list-inline">
       {% for post in tag[1] %}
         <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
       <li>
