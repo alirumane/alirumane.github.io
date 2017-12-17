@@ -48,10 +48,12 @@ description: "Take a look at my beautiful tags."
   
   
   <div class="tags-expo">
-  <div class="tags-expo-list">
+  <div class="post-tags">
+    <ul class="list-inline">
     {% for tag in site.tags %}
-    <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
+    <li class="list-inline-item"><a href="#{{ tag[0] | slugify }}" class="tag">{{ tag[0] }}</a></li>
     {% endfor %}
+      </ul>
   </div>
   <hr/>
   <div class="tags-expo-section">
