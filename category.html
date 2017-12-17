@@ -4,23 +4,80 @@ title: "Category"
 description: "Take a look at my beautiful category."
 ---
 
+<div class="category">
+{% assign category_list  = site.category %}
+  {% if category_list.first[0] == null %}
+    {% for category in category_list %}
+        <a data-scroll href="#{{ category | slugify }}">{{ category }}</a>
+    {% endfor %}
+  {% else %}
+    {% for category in category_list %}
+        <a data-scroll href="#{{ category[0] | slugify }}">{{ category[0] }}</a>
+    {% endfor %}
+  {% endif %}
+{% assign category_list = nil %}
+</div>
+
+{% for category in site.category %}
+    <span class="tag-title" id="{{ category[0] | slugify }}">{{ category[0] }}</span>
+    <ul class="post-list">
+        {% assign pages_list = category[1] %}
+        {% for post in pages_list reversed %}
+            {% if post.title != null %}
+            {% if group == null or group == post.group %}
+            <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time><span></a></li>
+            {% endif %}
+            {% endif %}
+        {% endfor %}
+        {% assign pages_list = nil %}
+        {% assign group = nil %}
+    </ul>
+{% endfor %}
+
+
 #### Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
 
 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 
-<!--
+              
+<div class="widget categories">             
+{% for category in site.categories %}
+  <li><a name="{{ category | first }}">{{ category | first }}</a>
+  </li>
+{% endfor %}
+</div>
+      
+              
+{% for category in site.categories %}
+  <li><a name="{{ category | first }}">{{ category | first }}</a>
+    <ul>
+    {% for posts in category %}
+      {% for post in posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    {% endfor %}
+    </ul>
+  </li>
+{% endfor %}
+      
+      
+      
+      
+      
+      
+      
 <div class="tags-expo">
-  <div class="post-tags">
-    {% for category in site.categories %}
+  <div class="tags-expo-list">
+    {% for tag in site.categories %}
     <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
     {% endfor %}
   </div>
   <hr/>
   <div class="tags-expo-section">
-    {% for category in site.categories %}
-    <h2 id="{{ category[0] | slugify }}">{{ category[0] }}</h2>
+    {% for tag in site.categories %}
+    <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
     <ul class="tags-expo-posts">
-      {% for category in tag[1] %}
+      {% for post in tag[1] %}
         <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
       <li>
         {{ post.title }}
@@ -32,4 +89,3 @@ sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
     {% endfor %}
   </div>
 </div>
--->
