@@ -59,7 +59,7 @@ It is preferred to download NOOBS over NOOBS Lite.
 
 **Format SD Card**
 
-![SD Formatter selection]({{site.url}}/images/SD_Formatter_4_instr.png "SD Formatter selection"){: .center-image }*SD Formatter selection*
+![SD Formatter selection](/images/post/SD_Formatter_4_instr.png "SD Formatter selection"){: .center-image }*SD Formatter selection*
 
 * Format SD card using [SD Card Formatter](https://www.sdcard.org/downloads/formatter_4/).
 
@@ -81,7 +81,7 @@ It is preferred to download NOOBS over NOOBS Lite.
 
 **Booting the first time**
 
- ![Raspbian installation selection]({{site.url}}/images/noobs_raspbian_recom.png "Raspbian installation selection"){: .center-image }*Raspbian installation selection*
+ ![Raspbian installation selection]( /images/post/noobs_raspbian_recom.png "Raspbian installation selection"){: .center-image }*Raspbian installation selection*
 
 * Insert the SD card in Raspberry Pi, connect the Mouse, Keyboard and HDMI cable.
 
