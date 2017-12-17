@@ -3,7 +3,7 @@ layout: post
 title: Raspberry Pi Camera over Internet with MJPG Streamer
 tags: [Raspberry Pi, MJPG Streamer, Video]
 category: [Raspberry Pi Tutorials]
-thumbnail: images/post/mjpg-streamer-on-raspberry-pi.jpg
+thumbnail: images/post/thumbs/mjpg-streamer-on-raspberry-pi.jpg
 description: Streaming video output on the web server or media player through a camera connected on Raspberry Pi can be used for many applications. You can stream video from Raspberry Pi Camera to Web Browsers, on Android, IOS, and Windows!
 ---
 
