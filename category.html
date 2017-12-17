@@ -3,12 +3,7 @@ layout: page
 title: "Category"
 description: "Take a look at my beautiful category."
 ---
-    
-    ## new  
-      
-      
-      
-      
+ 
 <div class="tags-expo">
   <div class="post-tags">
     {% for tag in site.categories %}
@@ -19,7 +14,7 @@ description: "Take a look at my beautiful category."
   <div class="tags-expo-section">
     {% for tag in site.categories %}
     <span class="tag-title" id="{{ tag[0] | slugify }}">{{ tag[0] }}</span>
-    <ul class="tags-expo-posts">
+    <ul class="list-inline">
       {% for post in tag[1] %}
         <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
       <li>
