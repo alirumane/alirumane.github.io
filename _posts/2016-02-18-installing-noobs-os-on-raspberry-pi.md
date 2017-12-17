@@ -81,7 +81,7 @@ It is preferred to download NOOBS over NOOBS Lite.
 
 **Booting the first time**
 
- ![Raspbian installation selection]( /images/post/noobs_raspbian_recom.png "Raspbian installation selection"){: .center-image }*Raspbian installation selection*
+ ![Raspbian installation selection](/images/post/noobs_raspbian_recom.png "Raspbian installation selection"){: .center-image }*Raspbian installation selection*
 
 * Insert the SD card in Raspberry Pi, connect the Mouse, Keyboard and HDMI cable.
 
