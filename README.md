@@ -10,4 +10,4 @@ This repo is the GitHub Pages site hosted via Github Pages and Jekyll.
 
 ## License
 
-[![npm](https://img.shields.io/npm/l/express.svg)](https://github.com/alirumane/alirumane.github.io/blob/master/LICENSE)
+[![npm](https://img.shields.io/badge/license-GPLv3.0-brightgreen.svg)(https://github.com/alirumane/alirumane.github.io/blob/master/LICENSE)
