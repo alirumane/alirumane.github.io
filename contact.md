@@ -15,6 +15,6 @@ mail : alirumane [at] yahoo [dot] com
 
 [alirumane.github.io](https://alirumane.github.io/)
 
-[linkedin.com/in/alinmrumane](www.linkedin.com/in/alinmrumane)
+[linkedin.com/in/alinmrumane](https://linkedin.com/in/alinmrumane)
 
 [github.com/alirumane](https://github.com/alirumane)
