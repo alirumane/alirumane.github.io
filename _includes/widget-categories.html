@@ -3,8 +3,8 @@
             <header>
               <h3 class="h6">Categories</h3>
             </header>
-		  {% for category in site.category %}
-                    {% if site.category %}
+		  {% for category in site.categories %}
+                    {% if site.categories %}
                     <div class="item d-flex justify-content-between">
                               <a href="{{ site.baseurl }}/category#{{category | slugify }}">{{ category }}</a>
                               <span>12</span>
