@@ -6,16 +6,16 @@ description: "Take a look at my beautiful category."
  
 <div class="tags-expo">
   <div class="post-tags">
-    {% for tag in site.categories %}
-    <a href="#{{ tag[0] | slugify }}" class="tag">{{ tag[0] }}</a>
+    {% for category in site.categories %}
+    <a href="#{{ category[0] | slugify }}" class="tag">{{ category[0] }}</a>
     {% endfor %}
   </div>
   <hr/>
   <div class="tags-expo-section">
-    {% for tag in site.categories %}
-    <span class="tag-title" id="{{ tag[0] | slugify }}">{{ tag[0] }}</span>
+    {% for category in site.categories %}
+    <span class="tag-title" id="{{ category[0] | slugify }}">{{ category[0] }}</span>
     <ul class="list-inline">
-      {% for post in tag[1] %}
+      {% for post in category[1] %}
         <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
       <li>
         {{ post.title }}
