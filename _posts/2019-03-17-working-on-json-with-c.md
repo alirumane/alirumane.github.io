@@ -3,7 +3,7 @@ layout: post
 title: Working on JSON with C
 tags: [JSON, C]
 category: [C]
-thumbnail : images/post/thumbs/setting-lighttpd-on-raspberry-pi.jpg
+thumbnail : images/post/thumbs/working-on-json-with-c.jpg
 description: JSON with C
 ---
 
