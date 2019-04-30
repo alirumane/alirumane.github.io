@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Working on JSON with C
+title: Working with JSON Data in C
 tags: [JSON, C]
 category: [C]
-thumbnail : images/post/thumbs/working-on-json-with-c.jpg
+thumbnail : images/post/thumbs/working-with-json-data-in-c.jpg
 description: JSON with C
 ---
 
