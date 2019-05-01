@@ -629,6 +629,10 @@ section.hero {
   padding: 0;
   color: #fff;
   
+  /* Sizing */
+    width: 100vw;
+    height: 100vh;
+  
   /* Background styles */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)));
     background-size: cover;
