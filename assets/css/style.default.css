@@ -628,6 +628,13 @@ div[class*="-btn"] {
 section.hero {
   padding: 0;
   color: #fff;
+  
+  /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)));
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 section.hero .container {
