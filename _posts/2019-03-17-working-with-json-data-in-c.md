@@ -104,6 +104,9 @@ Json array
 
 
 ```c
+#include <stdio.h> 
+#include "cJSON.h"
+
 int main()
 {
   cJSON *root = cJSON_CreateObject();
@@ -145,6 +148,9 @@ int main()
 ```
 
 ```c
+#include <stdio.h> 
+#include "cJSON.h"
+
 int main()
 {
   cJSON *root = cJSON_CreateObject();
