@@ -12,7 +12,7 @@ description: JSON with C
 [JavaScript Object Notation](http://json.org/) aka JSON is a lightweight data-interchange format.
 
 
-```json
+```javascript
 {
   "squadName": "Super hero squad",
   "homeTown": "Metro City",
