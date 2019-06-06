@@ -201,3 +201,81 @@ int main()
                 }]
 }
 ```
+
+
+```c
+#include <stdio.h> 
+#include "cJSON.h"
+
+int main()
+{
+  const char *const memberName[] = {"Molecule Man", "Madame Uppercut", "Eternal Flame", "Farari"};
+  const int const memberAge[] = {29, 39, 1000000};
+  const char *const memberSecIdentity[] = {"Dan Jukes", "Jane Wilson", "Unknown"};
+  const char *const memberPower[][5] = {
+      {"Radiation resistance", "Turning tiny", "Radiation blast"},
+      {"Million tonne punch", "Damage resistance", "Superhuman reflexes"},
+      {"Immortality", "Heat Immunity", "Inferno", "Teleportation", "Interdimensional travel"}};
+
+  cJSON *root = cJSON_CreateObject();
+  cJSON_AddStringToObject(root, "squadName", "Super hero squad");
+  cJSON_AddStringToObject(root, "homeTown", "Metro City");
+  cJSON_AddNumberToObject(root, "formed", 2016);
+  cJSON_AddStringToObject(root, "secretBase", "Super tower");
+  cJSON_AddStringToObject(root, "active", "true");
+
+  cJSON *members = cJSON_CreateArray();
+  for (size_t i = 0; i < 3; i++)
+  {
+    cJSON *member = cJSON_CreateObject();
+    cJSON_AddItemToObject(member, "name", cJSON_CreateString(memberName[i]));
+    cJSON_AddItemToObject(member, "age", cJSON_CreateNumber(memberAge[i]));
+    cJSON_AddItemToObject(member, "secretIdentity", cJSON_CreateString(memberSecIdentity[i]));
+
+    cJSON *powers = cJSON_CreateArray();
+    for (int j = 0; j < 5; j++)
+    {
+      if (memberPower[i][j] != NULL)
+      {
+        cJSON_AddItemToArray(powers, cJSON_CreateString(memberPower[i][j]));
+      }
+    }
+    cJSON_AddItemToObject(member, "powers", powers);
+    cJSON_AddItemToArray(members, member);
+  }
+  cJSON_AddItemToObject(root, "members", members);
+
+  char *json = NULL;
+  json = cJSON_Print(root);
+  cJSON_Delete(root);
+  printf("%s", json);
+  return 0;
+}
+```
+
+
+```javascript
+{
+        "squadName":    "Super hero squad",
+        "homeTown":     "Metro City",
+        "formed":       2016,
+        "secretBase":   "Super tower",
+        "active":       "true",
+        "members":      [{
+                        "name": "Molecule Man",
+                        "age":  29,
+                        "secretIdentity":       "Dan Jukes",
+                        "powers":       ["Radiation resistance", "Turning tiny", "Radiation blast"]
+                }, {
+                        "name": "Madame Uppercut",
+                        "age":  39,
+                        "secretIdentity":       "Jane Wilson",
+                        "powers":       ["Million tonne punch", "Damage resistance", "Superhuman reflexes"]
+                }, {
+                        "name": "Eternal Flame",
+                        "age":  1000000,
+                        "secretIdentity":       "Unknown",
+                        "powers":       ["Immortality", "Heat Immunity", "Inferno", "Teleportation", "Interdimensional travel"]
+                }]
+}
+```
