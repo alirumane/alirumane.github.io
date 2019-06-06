@@ -12,8 +12,19 @@ description: JSON with C
 [JavaScript Object Notation](http://json.org/) aka JSON is a lightweight data-interchange format.
 
 
+## Table of Contents
+
+1. [Brief](#brief)
+1. [JSON Structure](#json-structure)
+1. [Native C](#native-c)
+1. [Library](#library)
+	1. [Dependencies](#dependencies)
+	1. [Building](#building)
+1. [Finally!](#finally)
+
 Let's take an example from [developer Mozilla site's JSON structure](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON#JSON_structure) as a reference.
 
+#### JSON Structure
 ```javascript
 {
   "squadName": "Super hero squad",
