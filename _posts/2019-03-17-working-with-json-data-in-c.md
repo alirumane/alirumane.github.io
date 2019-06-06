@@ -68,17 +68,17 @@ We will use [cJSON](https://github.com/DaveGamble/cJSON) for parsing JSON data i
 
 int main()
 {
-	cJSON * root = cJSON_CreateObject();
-	cJSON_AddStringToObject(root, "squadName", "Super hero squad");
-	cJSON_AddStringToObject(root, "homeTown", "Metro City");
-	cJSON_AddNumberToObject(root, "formed", 2016);
-	cJSON_AddStringToObject(root, "secretBase", "Super tower");
-	cJSON_AddStringToObject(root, "active", "true");
+  cJSON *root = cJSON_CreateObject();
+  cJSON_AddStringToObject(root, "squadName", "Super hero squad");
+  cJSON_AddStringToObject(root, "homeTown", "Metro City");
+  cJSON_AddNumberToObject(root, "formed", 2016);
+  cJSON_AddStringToObject(root, "secretBase", "Super tower");
+  cJSON_AddStringToObject(root, "active", "true");
 
-	char * temp = NULL;
-	temp = cJSON_Print(root);
-	cJSON_Delete(root);
-	printf("Temp \n%s", temp);
+  char *json = NULL;
+  json = cJSON_Print(root);
+  cJSON_Delete(root);
+  printf("%s", json);
 }
 ```
 
