@@ -58,6 +58,11 @@ Let's take an example from [developer Mozilla site's JSON structure](https://dev
 }
 ```
 
+JSON data is written as name/value pairs.
+
+
+From  above example: name squadName value Super hero squad.
+
 
 We will use [cJSON](https://github.com/DaveGamble/cJSON) for parsing JSON data in C.
 
@@ -79,6 +84,7 @@ int main()
   json = cJSON_Print(root);
   cJSON_Delete(root);
   printf("%s", json);
+  return 0;
 }
 ```
 
@@ -94,3 +100,46 @@ Don't forget to use -lm while compiling the code.
 }
 ```
 
+Json array
+
+
+```c
+int main()
+{
+  cJSON *root = cJSON_CreateObject();
+  cJSON_AddStringToObject(root, "squadName", "Super hero squad");
+  cJSON_AddStringToObject(root, "homeTown", "Metro City");
+  cJSON_AddNumberToObject(root, "formed", 2016);
+  cJSON_AddStringToObject(root, "secretBase", "Super tower");
+  cJSON_AddStringToObject(root, "active", "true");
+
+  cJSON *members = cJSON_CreateArray();
+  cJSON *member = cJSON_CreateObject();
+  cJSON_AddItemToObject(member, "name", cJSON_CreateString("Molecule Man"));
+  cJSON_AddItemToObject(member, "age", cJSON_CreateNumber(29));
+  cJSON_AddItemToObject(member, "secretIdentity", cJSON_CreateString("Dan Jukes"));
+  cJSON_AddItemToArray(members, member);
+  cJSON_AddItemToObject(root, "members", members);
+
+  char *json = NULL;
+  json = cJSON_Print(root);
+  cJSON_Delete(root);
+  printf("%s", json);
+  return 0;
+}
+```
+
+```javascript
+{
+        "squadName":    "Super hero squad",
+        "homeTown":     "Metro City",
+        "formed":       2016,
+        "secretBase":   "Super tower",
+        "active":       "true",
+        "members":      [{
+                        "name": "Molecule Man",
+                        "age":  29,
+                        "secretIdentity":       "Dan Jukes"
+                }]
+}
+```
