@@ -12,7 +12,7 @@ description: JSON with C
 [JavaScript Object Notation](http://json.org/) aka JSON is a lightweight data-interchange format.
 
 
-## Table of Contents
+#### Table of Contents
 
 1. [Brief](#brief)
 1. [JSON Structure](#json-structure)
