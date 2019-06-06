@@ -12,6 +12,8 @@ description: JSON with C
 [JavaScript Object Notation](http://json.org/) aka JSON is a lightweight data-interchange format.
 
 
+Let's take an example from [developer Mozilla site's JSON structure](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON#JSON_structure) as a reference.
+
 ```javascript
 {
   "squadName": "Super hero squad",
@@ -55,4 +57,6 @@ description: JSON with C
   ]
 }
 ```
+
+We will use [cJSON](https://github.com/DaveGamble/cJSON) for parsing JSON data in C.
 
