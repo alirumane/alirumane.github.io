@@ -58,5 +58,39 @@ Let's take an example from [developer Mozilla site's JSON structure](https://dev
 }
 ```
 
+
 We will use [cJSON](https://github.com/DaveGamble/cJSON) for parsing JSON data in C.
+
+
+```c
+#include <stdio.h> 
+#include "cJSON.h"
+
+int main()
+{
+	cJSON * root = cJSON_CreateObject();
+	cJSON_AddStringToObject(root, "squadName", "Super hero squad");
+	cJSON_AddStringToObject(root, "homeTown", "Metro City");
+	cJSON_AddNumberToObject(root, "formed", 2016);
+	cJSON_AddStringToObject(root, "secretBase", "Super tower");
+	cJSON_AddStringToObject(root, "active", "true");
+
+	char * temp = NULL;
+	temp = cJSON_Print(root);
+	cJSON_Delete(root);
+	printf("Temp \n%s", temp);
+}
+```
+
+Don't forget to use -lm while compiling the code.
+
+```javascript
+{
+        "squadName":    "Super hero squad",
+        "homeTown":     "Metro City",
+        "formed":       2016,
+        "secretBase":   "Super tower",
+        "active":       "true"
+}
+```
 
