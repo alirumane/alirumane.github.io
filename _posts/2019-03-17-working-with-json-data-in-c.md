@@ -25,6 +25,36 @@ description: JSON with C
 Let's take an example from [developer Mozilla site's JSON structure](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON#JSON_structure) as a reference.
 
 #### JSON Structure
+
+
+JSON stores data in the form of name/key value pairs.
+
+JSON should have either an object or an array at its root. It can be empty but either an object or an array should be present.
+
+Following are the data types supported by JSON
+- string: a sequence of characters between double quotes ("")
+- number: digits with base 10, can be negative, fraction or exponent of 10
+- boolean: true or false
+- null/empty: value unassigned
+- object: an unordered set of name-value pair between curly braces, can be empty or separated by comma (,) if multiple are used
+- array : an ordered collection of values between square braces separated by a comma (,)
+
+
+A simple valid JSON structure can be:
+
+```javascript
+{
+}
+```
+
+or
+
+```javascript
+[
+]
+```
+
+
 ```javascript
 {
   "squadName": "Super hero squad",
@@ -69,7 +99,6 @@ Let's take an example from [developer Mozilla site's JSON structure](https://dev
 }
 ```
 
-JSON data is written as name/value pairs.
 
 
 From  above example: name squadName value Super hero squad.
