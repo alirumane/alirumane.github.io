@@ -9,7 +9,7 @@ description: JSON with C
 
 <p><i class="fa fa-quote-left fa-2x fa-pull-left fa-border"></i></p>
 
-[JavaScript Object Notation](http://json.org/) aka JSON is a lightweight data-interchange format.
+[JavaScript Object Notation](http://json.org/) aka JSON is a lightweight text based human readable data-interchange format following JavaScript object syntax. It is often considered as a replacement for XML in AJAX systems.
 
 
 #### Table of Contents
