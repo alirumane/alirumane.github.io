@@ -14,7 +14,8 @@ description: JSON with C
 
 If you are working with some API or with an IoT device that pushes some data to an API, there is a possibility you might be using JSON for the exchange of request.
 
-Is it a good practice to use JSON formatted data as an exchange for an IoT device? Let's keep that topic for another day and focus on working with JSON data in C.
+Is it a good practice to use JSON formatted data as an exchange for an IoT device that usually has the bandwidth, power, and processing as a constraint? Let's keep that topic for another day and focus on working with JSON data in C.
+
 
 #### Table of Contents
 
