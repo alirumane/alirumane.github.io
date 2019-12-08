@@ -12,6 +12,10 @@ description: JSON with C
 [JavaScript Object Notation](http://json.org/) aka JSON is a lightweight text based human readable data-interchange format following JavaScript object syntax. It is often considered as a replacement for XML in AJAX systems.
 
 
+If you are working with some API or with an IoT device that pushes some data to an API, there is a possibility you might be using JSON for the exchange of request.
+
+Is it a good practice to use JSON formatted data as an exchange for an IoT device? Let's keep that topic for another day and focus on working with JSON data in C.
+
 #### Table of Contents
 
 1. [Brief](#brief)
