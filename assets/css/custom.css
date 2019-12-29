@@ -4,6 +4,11 @@ ol, ul {
   list-style-position: inside;
 }
 
+ol, p, ul {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
 .blog-post .post-body p:not(.lead) {
   font-size: 1.2em;
 }
