@@ -4,13 +4,14 @@ ol, ul {
   list-style-position: inside;
 }
 
-ol, p, ul {
+/* ol, p, ul {
   font-size: 1.2em;
   line-height: 1.6;
-}
+} */
 
-.blog-post .post-body p:not(.lead) {
+.blog-post .post-body ol, ul, p:not(.lead) {
   font-size: 1.2em;
+  line-height: 1.6;
 }
 
 
