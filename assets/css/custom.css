@@ -4,7 +4,7 @@ ol, ul {
   list-style-position: inside;
 }
 
-.blog-post .post-body p:not(.lead) {
+blog-post .post-body p:not(.lead) {
   font-size: 1em;
 }
 
