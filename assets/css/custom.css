@@ -1,7 +1,7 @@
 /* your styles go here */
 
-ul {
-  padding: 20px;
+ol, ul {
+  list-style-position: inside;
 }
 
 pre {
