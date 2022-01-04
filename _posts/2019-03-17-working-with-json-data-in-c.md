@@ -129,6 +129,8 @@ int main()
   json = cJSON_Print(root);
   cJSON_Delete(root);
   printf("%s", json);
+  cJSON_Delete(root);
+
   return 0;
 }
 ```
@@ -173,6 +175,8 @@ int main()
   json = cJSON_Print(root);
   cJSON_Delete(root);
   printf("%s", json);
+  cJSON_Delete(root);
+
   return 0;
 }
 ```
@@ -226,6 +230,8 @@ int main()
   json = cJSON_Print(root);
   cJSON_Delete(root);
   printf("%s", json);
+  cJSON_Delete(root);
+
   return 0;
 }
 ```
@@ -294,6 +300,8 @@ int main()
   json = cJSON_Print(root);
   cJSON_Delete(root);
   printf("%s", json);
+  cJSON_Delete(root);
+
   return 0;
 }
 ```
